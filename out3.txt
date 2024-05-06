@@ -5,3 +5,32 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+
+2024-05-05 17:39:01,987 - INFO - Called process_three().
+PS C:\Users\topaz\Documents\streaming-data\streaming-02-multiple-processes> python multiple_processes.py
+2024-05-05 17:55:53,707 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-05 at 05:55 PM
+  Operating System: nt Windows 11
+  Python Version:   3.12.2
+  Path to Interpreter:  C:\Users\topaz\AppData\Local\Programs\Python\Python312\python.exe
+======================================================================
+
+2024-05-05 17:55:53,708 - INFO - Called recreate_database().
+2024-05-05 17:55:53,708 - INFO - Called drop_table().
+2024-05-05 17:55:53,729 - INFO - Table 'pets' dropped successfully.
+2024-05-05 17:55:53,729 - INFO - Called create_table().
+2024-05-05 17:55:53,736 - INFO - Table 'pets' created successfully.
+2024-05-05 17:55:53,844 - INFO - Called process_two().
+2024-05-05 17:55:53,844 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-05 17:55:53,844 - INFO - Called process_one().
+2024-05-05 17:55:53,846 - INFO - Called process_three().
+2024-05-05 17:55:53,846 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-05 17:55:53,846 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-05 17:55:56,862 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-05 17:55:59,420 - ERROR - ERROR while P1 inserting pet Ace: database is locked
+2024-05-05 17:55:59,420 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-05 17:55:59,481 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2024-05-05 17:55:59,481 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+PS C:\Users\topaz\Documents\streaming-data\streaming-02-multiple-processes> 
