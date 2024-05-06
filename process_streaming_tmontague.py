@@ -1,3 +1,4 @@
+# Import from Python Standard library
 import csv
 import time
 import logging
@@ -12,7 +13,7 @@ OUTPUT_FILE_NAME = "out9.txt"
 
 def prepare_message_from_row(row):
     """Prepare a string message from a given row."""
-    # Assuming CSV structure: id, name, unit_name, nutrient_nbr, rank, time
+    # CSV structure: id, name, unit_name, nutrient_nbr, rank, time
     id, name, unit_name, nutrient_nbr, rank, timestamp = row
     # Format the message as a string
     message = f"[{id}, {name}, {unit_name}, {nutrient_nbr}, {rank}, {timestamp}]"
